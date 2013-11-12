@@ -1,0 +1,3 @@
+zelazowy_memcached_homepage:
+    pattern:  /
+    defaults: { _controller: ZelazowyMemcachedBundle:Memcached:index }

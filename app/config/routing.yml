@@ -1,0 +1,4 @@
+zelazowy_memcached:
+    resource: "@ZelazowyMemcachedBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,7 @@
+parameters:
+#    zelazowy_memcached.example.class: Zelazowy\Bundle\MemcachedBundle\Example
+
+services:
+#    zelazowy_memcached.example:
+#        class: %zelazowy_memcached.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,10 @@
+# from http://stackoverflow.com/questions/11540171/symfony2-memcached-integration
+parameters:
+    memcached.servers:
+      - { host: 127.0.0.1, port: 11211 }
+
+services:
+    memcached:
+        class: Memcache
+        calls:
+            - [ setServerParams, [ 127.0.0.1, 11211 ]]
