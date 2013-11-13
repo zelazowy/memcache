@@ -1,11 +1,21 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
-    <ul>
+    <a class="btn btn-sm btn-success" href="{{ path('zelazowy_memcached_new') }}">Dodaj</a>
+
+    <table class="table table-hover table-bordered">
     {% for user in users %}
-        <li>{{ loop.index }}. {{ user.name }} :: {{ user.email }} :: {{ user.created|date('Y-m-d H:i:s') }} :: {{ user.updated|date('Y-m-d H:i:s') }}</li>
+        <tr>
+            <td>{{ loop.index }}.</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.created|date('Y-m-d H:i:s') }}</td>
+            <td>{{ user.updated|date('Y-m-d H:i:s') }}</td>
+        </tr>
     {% else %}
-        <li>No Records!</li>
+        <tr>
+            <td colspan="5">No Records!</td>
+        </tr>
     {% endfor %}
-    </ul>
+    </table>
 {% endblock body %}

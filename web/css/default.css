@@ -1,0 +1,4 @@
+.form-control[type="checkbox"] {
+    width: auto!important;
+    height: auto!important;
+}

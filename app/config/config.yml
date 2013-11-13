@@ -26,6 +26,9 @@ framework:
 twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
+    form:
+        resources:
+            - 'ZelazowyMemcachedBundle:Form:form.html.twig'
 
 # Assetic Configuration
 assetic:
@@ -57,18 +60,6 @@ doctrine:
     orm:
         auto_generate_proxy_classes: %kernel.debug%
         auto_mapping: true
-#        metadata_cache_driver:
-#            type: Memcache
-#            host: 127.0.0.1
-#            port: 11211
-        query_cache_driver:
-            type: Memcache
-            host: 127.0.0.1
-            port: 11211
-        result_cache_driver:
-            type: Memcache
-            host: 127.0.0.1
-            port: 11211
 
 # Swiftmailer Configuration
 swiftmailer:

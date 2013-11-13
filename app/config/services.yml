@@ -7,4 +7,4 @@ services:
     memcached:
         class: Memcache
         calls:
-            - [ setServerParams, [ 127.0.0.1, 11211 ]]
+            - [ addServer, [ 127.0.0.1, 11211 ]]
